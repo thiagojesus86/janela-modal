@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,700&display=swap');
+
+:root{
+    --light-blue: rgb(0, 183, 255);
+    --blue: rgb(9, 65, 117);
+    --white: rgb(255,255,255);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 12pt;
+    color: var(--blue);
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--blue);
+    /* background: url('https://wallpaperaccess.com/full/537069.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.btn{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 50px;
+    padding: 15px;
+    background: var(--white);
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    animation: zoomIn .4s 1 linear forwards;
+    transition: all .4s ease-in-out;
+}
+.btn:hover{
+    cursor: pointer;
+    background: var(--blue);
+    color: var(--white);
+}
+
+/*
+** 
+** janela modal
+**
+*/
+#modal{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.6);
+    z-index: 999;
+}
+#containerModal{
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    background: rgb(255,255,255);
+    border-radius: 3px;
+    padding: 30px 10px;
+    text-align: center;
+    box-shadow: 0 10px 10px 0px rgb(200,200,200);
+}
+#headerModal{
+    width: 100%;
+}
+#headerModal ion-icon{
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: var(--light-blue);
+}
+#contentModal{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    font-size: 1.4rem;
+    color: var(--blue);
+}
+#footerModal{
+    width: 100%;
+    padding: 10px 0;
+}
+#footerModal #confirmModal{
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 8px 0;
+    background: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all .4s ease-in-out;
+}
+#footerModal #confirmModal:hover{
+    cursor: pointer;
+    background: var(--white);
+    color: var(--blue);
+}
