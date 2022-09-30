@@ -5,6 +5,6 @@
 <li>FadeIn</li>
 <li>FadeOut</li>
 <li>ZoomIn</li>
-<li>ZoomOut<li>
+<li>ZoomOut</li>
 </ul>
 <img src="https://user-images.githubusercontent.com/89478867/130675082-afadd95d-113e-4929-a266-2c033a929533.gif" />
